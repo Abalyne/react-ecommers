@@ -3,7 +3,6 @@ import { CartContext } from "./contexts/CartContext"
 import HeaderIMG from "../assets/Banner_Image.png";
 import styles from "./Header.module.css";
 import { useNavigate } from "react-router-dom";
-import { useHover } from "usehooks-ts"
 import { BsFillCartFill } from "react-icons/bs"
 import Cart from "./cart/Cart";
 
@@ -13,8 +12,6 @@ const Header = ({ bannerVisibility }) => {
   const [showBanner, setShowBanner] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const nav = useNavigate();
-  const hoverRef = useRef(null)
-  const isHover = useHover(hoverRef)
 
   useEffect(() => {
     setShowBanner(bannerVisibility);
