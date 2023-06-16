@@ -20,6 +20,7 @@
   cursor: pointer;
   background-color: white;
   background-size: cover;
+  border-radius: 1em;
   border: 0;
   height: 2.5em;
   width: 2.8em;
@@ -42,6 +43,7 @@
   cursor: pointer;
   background-color: white;
   background-size: cover;
+  border-radius: 1em;
   border: 0;
   height: 2.5em;
   width: 2.8em;
