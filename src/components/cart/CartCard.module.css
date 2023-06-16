@@ -1,0 +1,53 @@
+.cartcard-main{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size: small;
+    margin: 1em;
+}
+
+.cartcard-elem-one{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+}
+
+.cartcard-elem-one img{
+    display: flex;
+    width: 20%;
+    margin-right: 0.2em;
+}
+
+.cartcard-elem-one-text{
+    display: flex;
+    flex-flow: column;
+}
+
+.cartcard-elem-one-text h2{
+    display: flex;
+    margin: 0.3em;
+}
+
+.cartcard-elem-one-text h3{
+    display: flex;
+    font-size: small;
+    margin: 0.3em;
+}
+
+.cartcard-elem-one-input{
+    display: flex;
+
+}
+
+.cartcard-elem-one-input input{
+    display: flex;
+    width: 5em;
+    margin: 0.3em;
+}
+
+.cartcard-elem-one-input button{
+    display: flex;
+    width: 1.5em;
+    justify-content: center;
+    margin: 0.3em;
+}

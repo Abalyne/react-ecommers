@@ -1,0 +1,132 @@
+.content-main {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+.content-main-top{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  padding-top: 5em;
+  margin: 0 150px 20px 150px;
+}
+
+
+.content-family-one{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.content-family-one-boxs{
+  display: flex;
+}
+
+.content-family-one-boxs h2{
+  display: flex;
+  margin-left: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 0.5em;
+  border-width: 0.01em;
+  border-style: solid;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.5em 0.5em 0.5em 0.05em lightgray;
+}
+
+.content-family-one img{
+  display: flex;
+  width: 15em;
+  height: 20em;
+}
+
+.content-family-two{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  min-height: 8em;
+  width: 25em;
+  margin: 1em 2em 0.5em 2em;
+}
+
+.content-family-two p{
+  margin: 0.1em;
+  color: rgb(160, 160, 160);
+}
+
+.content-family-two h1{
+  margin: 0.1em 0.1em 0.1em 0;
+}
+
+.content-family-two h3{
+  margin-right: 0.6em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.content-family-twoAndSize{
+  display: flex;
+  flex-flow: column;
+  width: 25em;
+
+}
+
+.content-family-sizes{
+  display: flex;
+  flex-flow: column;
+  margin: 0.1em 2em 0.5em 2em;
+}
+
+.content-family-sizes p{
+  font-size: 0.8em;
+}
+
+.content-family-sizes-buttons{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-family-sizes-buttons button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  margin-right: 0.3em;
+  border-radius: 2em;
+}
+
+.content-family-quantity{
+  display: flex;
+  flex-flow: column;
+  margin: 0 2em 2em 2em;
+}
+
+.content-family-quantity p{
+  font-size: 0.8em;
+}
+
+.content-family-quantity input{
+  width: 7em;
+  height: 3em;
+}
+
+.content-family-cartButton{
+  display: flex;
+  margin: 0 2em 2em 2em;
+  justify-content: center;
+}
+
+.content-family-cartButton button{
+  width: 30em;
+  height: 3em;
+  border-radius: 2em;
+}
+
+.content-family-disc{
+  display: flex;
+  margin: 0 2em 2em 2em;
+}

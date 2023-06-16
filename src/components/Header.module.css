@@ -1,0 +1,91 @@
+.header-show {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  z-index: 10;
+}
+
+.header-show h2{
+  cursor: pointer;
+}
+
+.header-show button{
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("file:///C:/Users/User/Desktop/MyReactProject/p1/01-starting-project/src/assets/icons8-cart-64.png");
+  background-size: cover;
+  border: 0;
+  height: 2.5em;
+  width: 2.8em;
+}
+
+.header-show button:hover{
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("file:///C:/Users/User/Desktop/MyReactProject/p1/01-starting-project/src/assets/icons8-cart-64-black.png");
+  background-size: cover;
+  border: 0;
+  height: 2.5em;
+  width: 2.8em;
+}
+
+.header-hidden h2{
+  cursor: pointer;
+}
+
+.header-hidden button{
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("file:///C:/Users/User/Desktop/MyReactProject/p1/01-starting-project/src/assets/icons8-cart-64.png");
+  background-size: cover;
+  border: 0;
+  height: 2.5em;
+  width: 2.8em;
+}
+
+.header-hidden button:hover{
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("file:///C:/Users/User/Desktop/MyReactProject/p1/01-starting-project/src/assets/icons8-cart-64-black.png");
+  background-size: cover;
+  border: 0;
+  height: 2.5em;
+  width: 2.8em;
+}
+
+.header-hidden {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  z-index: 10;
+}
+
+.main-image {
+  width: 100%;
+  height: 50rem;
+  z-index: 0;
+  overflow: hidden;
+  margin: 0;
+  background-size: cover;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
