@@ -41,7 +41,7 @@ const Header = ({ bannerVisibility }) => {
       {!showBanner && (
         <header className={styles["header-hidden"]}>
           <h2 onClick={homePageSwitchHandler}>ApeInCables</h2>
-          <button onClick={cartShowModalHandler} />
+          <button onClick={cartShowModalHandler}>{<BsFillCartFill />}</button>
         </header>
       )}
       {showBanner && (
