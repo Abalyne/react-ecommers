@@ -4,7 +4,7 @@ import HeaderIMG from "../assets/Banner_Image.png";
 import styles from "./Header.module.css";
 import { useNavigate } from "react-router-dom";
 import { useHover } from "usehooks-ts"
-import { cartIconClosed } from "react-icons/BsCartDashFill"
+import { BsFillCartFill } from "react-icons/bs"
 import Cart from "./cart/Cart";
 
 
@@ -38,7 +38,7 @@ const Header = ({ bannerVisibility }) => {
       {showBanner && (
         <header className={styles["header-show"]}>
           <h2 onClick={homePageSwitchHandler}>ApeInCables</h2>
-          <button onClick={cartShowModalHandler}>{<cartIconClosed />}</button>
+          <button onClick={cartShowModalHandler}>{<BsFillCartFill />}</button>
         </header>
       )}
       {!showBanner && (
