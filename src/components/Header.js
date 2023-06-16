@@ -38,7 +38,7 @@ const Header = ({ bannerVisibility }) => {
       {showBanner && (
         <header className={styles["header-show"]}>
           <h2 onClick={homePageSwitchHandler}>ApeInCables</h2>
-          <button onClick={cartShowModalHandler} ref={hoverRef} {() => {return <cartIconClosed />}}/>
+          <button onClick={cartShowModalHandler}>{<cartIconClosed />}</button>
         </header>
       )}
       {!showBanner && (
