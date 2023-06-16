@@ -15,7 +15,7 @@ const CartCard = ({
     <>
       <div id={cartItemId} className={styles["cartcard-main"]}>
         <div className={styles["cartcard-elem-one"]}>
-          <img src={cartItemImage} />
+          <img src={cartItemImage} alt="Cart"/>
           <div className={styles["cartcard-elem-one-text"]}>
             <div>
               <h2>{cartItemTitle}</h2>

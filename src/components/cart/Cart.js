@@ -3,21 +3,22 @@ import { CartContext } from "../contexts/CartContext";
 import CartCard from "./CartCard";
 
 import styles from "./Cart.module.css";
+import { useCallback } from "react";
 
 const Cart = ({ itemsAr, exitModalButton }) => {
   const { setCartItem } = useContext(CartContext)
   const [items, setItems] = useState([]);
 
-  const itemsArHandler = () => {
+  const itemsArHandler = useCallback(() => {
     const uniqueArray = itemsAr.filter((obj, index, self) => {
       return index === self.findIndex((o) => o.id === obj.id);
     });
     setItems(uniqueArray);
-  };
+  }, [itemsAr]);
 
   useEffect(() => {
     itemsArHandler();
-  }, [itemsAr]);
+  }, [itemsAr, itemsArHandler]);
 
   const deleteItemHandler = id =>{
     const uniqueArrayTwo = items.filter(item => item.id !== id)

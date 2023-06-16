@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import Header from "../Header";
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState, useContext, useCallback } from "react";
 import { CartContext } from "../contexts/CartContext"
 import Footer from "../Footer";
 import styles from "./ProductPage.module.css";
@@ -13,17 +13,17 @@ const ProductPage = () => {
   const [productSize, setProductSize] = useState("XS");
   const [productCount, setProductCount] = useState(1);
 
-  async function fetchSinglePage() {
+  const fetchSinglePage = useCallback( async () => {
     const response = await fetch(
       `https://fakestoreapi.com/products/${params.id}`
     );
     const data = await response.json();
     setItem(data);
-  }
+  }, [params.id])
 
   useEffect(() => {
     fetchSinglePage();
-  }, [params]);
+  }, [params, fetchSinglePage]);
 
   const countChangeHandler = (e) => {
     setProductCount(e.target.value.toString());
@@ -51,7 +51,7 @@ const ProductPage = () => {
       <div className={styles["content-main"]}>
         <div className={styles["content-main-top"]}>
           <div className={styles["content-family-one"]}>
-            <img src={item.image} alt="Product image" />
+            <img src={item.image} alt="Product" />
             <div className={styles["content-family-one-boxs"]}>
               <h2>1</h2>
               <h2>2</h2>
